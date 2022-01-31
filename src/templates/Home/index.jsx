@@ -5,7 +5,7 @@ export const Home = () => {
   return (
     <div>
       <Styled.Wrapper>
-        <Heading>Hello, World</Heading>
+        <h1>Hello</h1>
       </Styled.Wrapper>
     </div>
   );
