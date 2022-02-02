@@ -2,7 +2,7 @@
 
 exports[`<SectionBackground /> should render with background dark 1`] = `
 .c1 {
-  max-width: 80rem;
+  max-width: 120rem;
   margin: 0 auto;
   padding: 3.2rem;
 }
@@ -40,7 +40,7 @@ exports[`<SectionBackground /> should render with background dark 1`] = `
 
 exports[`<SectionBackground /> should render with background light 1`] = `
 .c1 {
-  max-width: 80rem;
+  max-width: 120rem;
   margin: 0 auto;
   padding: 3.2rem;
 }
