@@ -22,14 +22,36 @@ describe('<Heading />', () => {
     });
   });
 
-  it('should render correct heading sizes', () => {
+  it('should render small size', () => {
     renderTheme(<Heading size="small">texto</Heading>);
     const heading = screen.getByRole('heading', { name: 'texto' });
     expect(heading).toHaveStyle({
       'font-size': theme.font.sizes.medium,
     });
+  });
 
-    //should test all sizes
+  it('should render medium size', () => {
+    renderTheme(<Heading size="medium">texto</Heading>);
+    const heading = screen.getByRole('heading', { name: 'texto' });
+    expect(heading).toHaveStyle({
+      'font-size': theme.font.sizes.large,
+    });
+  });
+
+  it('should render big size', () => {
+    renderTheme(<Heading size="big">texto</Heading>);
+    const heading = screen.getByRole('heading', { name: 'texto' });
+    expect(heading).toHaveStyle({
+      'font-size': theme.font.sizes.xlarge,
+    });
+  });
+
+  it('should render huge size', () => {
+    renderTheme(<Heading size="huge">texto</Heading>);
+    const heading = screen.getByRole('heading', { name: 'texto' });
+    expect(heading).toHaveStyle({
+      'font-size': theme.font.sizes.xhuge,
+    });
   });
 
   it('should render correct font size when using mobile', () => {

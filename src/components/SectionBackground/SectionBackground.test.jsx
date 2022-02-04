@@ -22,4 +22,14 @@ describe('<SectionBackground />', () => {
     expect(screen.getByRole('heading')).toBeInTheDocument();
     expect(container).toMatchSnapshot();
   });
+
+  it('should render without background', () => {
+    const { container } = renderTheme(
+      <SectionBackground background={undefined}>
+        <h1>Children</h1>
+      </SectionBackground>,
+    );
+    expect(screen.getByRole('heading')).toBeInTheDocument();
+    expect(container).toMatchSnapshot();
+  });
 });
